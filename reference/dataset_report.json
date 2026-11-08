@@ -1,0 +1,2636 @@
+{
+ "Dataset_balanced": {
+  "source": "Dataset",
+  "label": "Original rat dataset (template)",
+  "tasks": {
+   "control_vml": {
+    "class_names": [
+     "Control",
+     "VML"
+    ],
+    "splits": {
+     "train": {
+      "per_class": 1457,
+      "source_per_class": {
+       "Control": 1457,
+       "VML": 1478
+      },
+      "slides": {
+       "Control": 10,
+       "VML": 6
+      },
+      "slide_ids": {
+       "Control": [
+        "ES12L_4 - Cy5",
+        "ES12L_4-1 - Cy5",
+        "ES12L_4-2 - Cy5",
+        "ES1L_2 - Cy5",
+        "ES1L_3 - Cy5",
+        "ES6L_ - Cy5",
+        "ES7L_4 - Cy5",
+        "ES8L_3 - Cy5",
+        "ES8L_3-1 - Cy5",
+        "ES8L_3-2 - Cy5"
+       ],
+       "VML": [
+        "H13R_LM",
+        "H3R_LM",
+        "H8R_LM",
+        "L107R_T2",
+        "pb13l_cy5_.h5",
+        "pb3l_cy5.h5"
+       ]
+      },
+      "per_slide_kept": {
+       "ES12L_4 - Cy5": {
+        "class": "Control",
+        "had": 414,
+        "kept": 414
+       },
+       "ES12L_4-1 - Cy5": {
+        "class": "Control",
+        "had": 599,
+        "kept": 599
+       },
+       "ES12L_4-2 - Cy5": {
+        "class": "Control",
+        "had": 336,
+        "kept": 336
+       },
+       "ES1L_2 - Cy5": {
+        "class": "Control",
+        "had": 1,
+        "kept": 1
+       },
+       "ES1L_3 - Cy5": {
+        "class": "Control",
+        "had": 1,
+        "kept": 1
+       },
+       "ES6L_ - Cy5": {
+        "class": "Control",
+        "had": 80,
+        "kept": 80
+       },
+       "ES7L_4 - Cy5": {
+        "class": "Control",
+        "had": 11,
+        "kept": 11
+       },
+       "ES8L_3 - Cy5": {
+        "class": "Control",
+        "had": 1,
+        "kept": 1
+       },
+       "ES8L_3-1 - Cy5": {
+        "class": "Control",
+        "had": 10,
+        "kept": 10
+       },
+       "ES8L_3-2 - Cy5": {
+        "class": "Control",
+        "had": 4,
+        "kept": 4
+       },
+       "H13R_LM": {
+        "class": "VML",
+        "had": 314,
+        "kept": 314
+       },
+       "H3R_LM": {
+        "class": "VML",
+        "had": 274,
+        "kept": 274
+       },
+       "H8R_LM": {
+        "class": "VML",
+        "had": 59,
+        "kept": 59
+       },
+       "L107R_T2": {
+        "class": "VML",
+        "had": 6,
+        "kept": 6
+       },
+       "pb13l_cy5_.h5": {
+        "class": "VML",
+        "had": 449,
+        "kept": 428
+       },
+       "pb3l_cy5.h5": {
+        "class": "VML",
+        "had": 376,
+        "kept": 376
+       }
+      }
+     },
+     "val": {
+      "per_class": 257,
+      "source_per_class": {
+       "Control": 792,
+       "VML": 257
+      },
+      "slides": {
+       "Control": 2,
+       "VML": 2
+      },
+      "slide_ids": {
+       "Control": [
+        "ES5L_3 - Cy5",
+        "ES5L_3 - Cy5 dj"
+       ],
+       "VML": [
+        "H34R_LM",
+        "H41R_LM"
+       ]
+      },
+      "per_slide_kept": {
+       "ES5L_3 - Cy5": {
+        "class": "Control",
+        "had": 396,
+        "kept": 129
+       },
+       "ES5L_3 - Cy5 dj": {
+        "class": "Control",
+        "had": 396,
+        "kept": 128
+       },
+       "H34R_LM": {
+        "class": "VML",
+        "had": 138,
+        "kept": 138
+       },
+       "H41R_LM": {
+        "class": "VML",
+        "had": 119,
+        "kept": 119
+       }
+      }
+     },
+     "test": {
+      "per_class": 733,
+      "source_per_class": {
+       "Control": 1959,
+       "VML": 733
+      },
+      "slides": {
+       "Control": 6,
+       "VML": 2
+      },
+      "slide_ids": {
+       "Control": [
+        "ES17L_2 - Cy5",
+        "ES17L_3 - Cy5",
+        "ES18L_1 - Cy5",
+        "ES18L_1-1 - Cy5",
+        "ES18L_1-2 - Cy5",
+        "L155L_TRITC-010"
+       ],
+       "VML": [
+        "pb24l_cy5_.h5",
+        "pb36l_cy5_.h5"
+       ]
+      },
+      "per_slide_kept": {
+       "ES17L_2 - Cy5": {
+        "class": "Control",
+        "had": 175,
+        "kept": 122
+       },
+       "ES17L_3 - Cy5": {
+        "class": "Control",
+        "had": 395,
+        "kept": 122
+       },
+       "ES18L_1 - Cy5": {
+        "class": "Control",
+        "had": 380,
+        "kept": 122
+       },
+       "ES18L_1-1 - Cy5": {
+        "class": "Control",
+        "had": 432,
+        "kept": 122
+       },
+       "ES18L_1-2 - Cy5": {
+        "class": "Control",
+        "had": 449,
+        "kept": 122
+       },
+       "L155L_TRITC-010": {
+        "class": "Control",
+        "had": 128,
+        "kept": 123
+       },
+       "pb24l_cy5_.h5": {
+        "class": "VML",
+        "had": 360,
+        "kept": 360
+       },
+       "pb36l_cy5_.h5": {
+        "class": "VML",
+        "had": 373,
+        "kept": 373
+       }
+      }
+     }
+    }
+   },
+   "poor_very_poor": {
+    "class_names": [
+     "Poor",
+     "Very poor"
+    ],
+    "splits": {
+     "train": {
+      "per_class": 1504,
+      "source_per_class": {
+       "Poor": 1958,
+       "Very poor": 1504
+      },
+      "slides": {
+       "Poor": 5,
+       "Very poor": 4
+      },
+      "slide_ids": {
+       "Poor": [
+        "ES5L_3 - Cy5",
+        "H16R_LM",
+        "H88R_LM",
+        "H8R_LM",
+        "pb13l_cy5_.h5"
+       ],
+       "Very poor": [
+        "H34R_LM",
+        "H3R_LM",
+        "L107R_T2",
+        "L121R_TRITC"
+       ]
+      },
+      "per_slide_kept": {
+       "ES5L_3 - Cy5": {
+        "class": "Poor",
+        "had": 703,
+        "kept": 553
+       },
+       "H16R_LM": {
+        "class": "Poor",
+        "had": 177,
+        "kept": 177
+       },
+       "H34R_LM": {
+        "class": "Very poor",
+        "had": 271,
+        "kept": 271
+       },
+       "H3R_LM": {
+        "class": "Very poor",
+        "had": 410,
+        "kept": 410
+       },
+       "H88R_LM": {
+        "class": "Poor",
+        "had": 118,
+        "kept": 118
+       },
+       "H8R_LM": {
+        "class": "Poor",
+        "had": 104,
+        "kept": 104
+       },
+       "L107R_T2": {
+        "class": "Very poor",
+        "had": 12,
+        "kept": 12
+       },
+       "L121R_TRITC": {
+        "class": "Very poor",
+        "had": 811,
+        "kept": 811
+       },
+       "pb13l_cy5_.h5": {
+        "class": "Poor",
+        "had": 856,
+        "kept": 552
+       }
+      }
+     },
+     "val": {
+      "per_class": 168,
+      "source_per_class": {
+       "Poor": 168,
+       "Very poor": 686
+      },
+      "slides": {
+       "Poor": 1,
+       "Very poor": 1
+      },
+      "slide_ids": {
+       "Poor": [
+        "H36R_LM"
+       ],
+       "Very poor": [
+        "L122R_TRITC"
+       ]
+      },
+      "per_slide_kept": {
+       "H36R_LM": {
+        "class": "Poor",
+        "had": 168,
+        "kept": 168
+       },
+       "L122R_TRITC": {
+        "class": "Very poor",
+        "had": 686,
+        "kept": 168
+       }
+      }
+     },
+     "test": {
+      "per_class": 900,
+      "source_per_class": {
+       "Poor": 999,
+       "Very poor": 900
+      },
+      "slides": {
+       "Poor": 4,
+       "Very poor": 2
+      },
+      "slide_ids": {
+       "Poor": [
+        "H13R_LM",
+        "H41R_LM",
+        "H89R_LM",
+        "H96R_LM"
+       ],
+       "Very poor": [
+        "H91R_LM",
+        "L130R_TRITC"
+       ]
+      },
+      "per_slide_kept": {
+       "H13R_LM": {
+        "class": "Poor",
+        "had": 389,
+        "kept": 290
+       },
+       "H41R_LM": {
+        "class": "Poor",
+        "had": 192,
+        "kept": 192
+       },
+       "H89R_LM": {
+        "class": "Poor",
+        "had": 181,
+        "kept": 181
+       },
+       "H91R_LM": {
+        "class": "Very poor",
+        "had": 226,
+        "kept": 226
+       },
+       "H96R_LM": {
+        "class": "Poor",
+        "had": 237,
+        "kept": 237
+       },
+       "L130R_TRITC": {
+        "class": "Very poor",
+        "had": 674,
+        "kept": 674
+       }
+      }
+     }
+    }
+   },
+   "multiclass": {
+    "class_names": [
+     "Perfect",
+     "Poor",
+     "Very poor"
+    ],
+    "splits": {
+     "train": {
+      "per_class": 973,
+      "source_per_class": {
+       "Perfect": 973,
+       "Poor": 1270,
+       "Very poor": 1379
+      },
+      "slides": {
+       "Perfect": 3,
+       "Poor": 5,
+       "Very poor": 4
+      },
+      "slide_ids": {
+       "Perfect": [
+        "ES18L_1-1 - Cy5",
+        "ES18L_1-2 - Cy5",
+        "H32R_LM"
+       ],
+       "Poor": [
+        "ES5L_3 - Cy5",
+        "H16R_LM",
+        "H36R_LM",
+        "H88R_LM",
+        "H8R_LM"
+       ],
+       "Very poor": [
+        "H34R_LM",
+        "H3R_LM",
+        "L107R_T2",
+        "L122R_TRITC"
+       ]
+      },
+      "per_slide_kept": {
+       "ES18L_1-1 - Cy5": {
+        "class": "Perfect",
+        "had": 412,
+        "kept": 412
+       },
+       "ES18L_1-2 - Cy5": {
+        "class": "Perfect",
+        "had": 365,
+        "kept": 365
+       },
+       "ES5L_3 - Cy5": {
+        "class": "Poor",
+        "had": 703,
+        "kept": 406
+       },
+       "H16R_LM": {
+        "class": "Poor",
+        "had": 177,
+        "kept": 177
+       },
+       "H32R_LM": {
+        "class": "Perfect",
+        "had": 196,
+        "kept": 196
+       },
+       "H34R_LM": {
+        "class": "Very poor",
+        "had": 271,
+        "kept": 271
+       },
+       "H36R_LM": {
+        "class": "Poor",
+        "had": 168,
+        "kept": 168
+       },
+       "H3R_LM": {
+        "class": "Very poor",
+        "had": 410,
+        "kept": 345
+       },
+       "H88R_LM": {
+        "class": "Poor",
+        "had": 118,
+        "kept": 118
+       },
+       "H8R_LM": {
+        "class": "Poor",
+        "had": 104,
+        "kept": 104
+       },
+       "L107R_T2": {
+        "class": "Very poor",
+        "had": 12,
+        "kept": 12
+       },
+       "L122R_TRITC": {
+        "class": "Very poor",
+        "had": 686,
+        "kept": 345
+       }
+      }
+     },
+     "val": {
+      "per_class": 22,
+      "source_per_class": {
+       "Perfect": 22,
+       "Poor": 856,
+       "Very poor": 811
+      },
+      "slides": {
+       "Perfect": 1,
+       "Poor": 1,
+       "Very poor": 1
+      },
+      "slide_ids": {
+       "Perfect": [
+        "ES7L_4 - Cy5"
+       ],
+       "Poor": [
+        "pb13l_cy5_.h5"
+       ],
+       "Very poor": [
+        "L121R_TRITC"
+       ]
+      },
+      "per_slide_kept": {
+       "ES7L_4 - Cy5": {
+        "class": "Perfect",
+        "had": 22,
+        "kept": 22
+       },
+       "L121R_TRITC": {
+        "class": "Very poor",
+        "had": 811,
+        "kept": 22
+       },
+       "pb13l_cy5_.h5": {
+        "class": "Poor",
+        "had": 856,
+        "kept": 22
+       }
+      }
+     },
+     "test": {
+      "per_class": 443,
+      "source_per_class": {
+       "Perfect": 443,
+       "Poor": 999,
+       "Very poor": 900
+      },
+      "slides": {
+       "Perfect": 5,
+       "Poor": 4,
+       "Very poor": 2
+      },
+      "slide_ids": {
+       "Perfect": [
+        "ES17L_3 - Cy5",
+        "ES6L_ - Cy5",
+        "H28R_LM",
+        "H93R_LM",
+        "L148L_TRITC"
+       ],
+       "Poor": [
+        "H13R_LM",
+        "H41R_LM",
+        "H89R_LM",
+        "H96R_LM"
+       ],
+       "Very poor": [
+        "H91R_LM",
+        "L130R_TRITC"
+       ]
+      },
+      "per_slide_kept": {
+       "ES17L_3 - Cy5": {
+        "class": "Perfect",
+        "had": 204,
+        "kept": 204
+       },
+       "ES6L_ - Cy5": {
+        "class": "Perfect",
+        "had": 31,
+        "kept": 31
+       },
+       "H13R_LM": {
+        "class": "Poor",
+        "had": 389,
+        "kept": 110
+       },
+       "H28R_LM": {
+        "class": "Perfect",
+        "had": 27,
+        "kept": 27
+       },
+       "H41R_LM": {
+        "class": "Poor",
+        "had": 192,
+        "kept": 111
+       },
+       "H89R_LM": {
+        "class": "Poor",
+        "had": 181,
+        "kept": 111
+       },
+       "H91R_LM": {
+        "class": "Very poor",
+        "had": 226,
+        "kept": 222
+       },
+       "H93R_LM": {
+        "class": "Perfect",
+        "had": 173,
+        "kept": 173
+       },
+       "H96R_LM": {
+        "class": "Poor",
+        "had": 237,
+        "kept": 111
+       },
+       "L130R_TRITC": {
+        "class": "Very poor",
+        "had": 674,
+        "kept": 221
+       },
+       "L148L_TRITC": {
+        "class": "Perfect",
+        "had": 8,
+        "kept": 8
+       }
+      }
+     }
+    }
+   }
+  }
+ },
+ "patches_before_augmentation_v4": {
+  "source": "patches_before_augmentation_v3",
+  "label": "New rat dataset (from v3)",
+  "tasks": {
+   "control_vml": {
+    "class_names": [
+     "Control",
+     "VML"
+    ],
+    "splits": {
+     "train": {
+      "per_class": 5281,
+      "source_per_class": {
+       "Control": 5389,
+       "VML": 5281
+      },
+      "slides": {
+       "Control": 18,
+       "VML": 18
+      },
+      "slide_ids": {
+       "Control": [
+        "ES12L_4",
+        "ES12L_4-1",
+        "ES12L_4-2",
+        "ES1L_2",
+        "ES1L_3",
+        "ES5L_3",
+        "ES7L_4",
+        "ES8L_3",
+        "ES8L_3-1",
+        "ES8L_3-2",
+        "H32R",
+        "NC11R",
+        "NC7R",
+        "NC8R",
+        "NC9R",
+        "PB21R",
+        "PB32R",
+        "PB8R"
+       ],
+       "VML": [
+        "H34R",
+        "H36R",
+        "H3R",
+        "H88R",
+        "H8R",
+        "L107R_T1",
+        "L107R_T2",
+        "L107R_T3",
+        "L107R_T4",
+        "L54R_T1",
+        "L54R_T2",
+        "NC11L",
+        "NC12L",
+        "NC7L",
+        "PB13L",
+        "PB14L",
+        "PB4L",
+        "PS1"
+       ]
+      },
+      "per_slide_kept": {
+       "ES12L_4": {
+        "class": "Control",
+        "had": 321,
+        "kept": 315
+       },
+       "ES12L_4-1": {
+        "class": "Control",
+        "had": 321,
+        "kept": 315
+       },
+       "ES12L_4-2": {
+        "class": "Control",
+        "had": 321,
+        "kept": 315
+       },
+       "ES1L_2": {
+        "class": "Control",
+        "had": 321,
+        "kept": 314
+       },
+       "ES1L_3": {
+        "class": "Control",
+        "had": 81,
+        "kept": 81
+       },
+       "ES5L_3": {
+        "class": "Control",
+        "had": 321,
+        "kept": 314
+       },
+       "ES7L_4": {
+        "class": "Control",
+        "had": 255,
+        "kept": 255
+       },
+       "ES8L_3": {
+        "class": "Control",
+        "had": 321,
+        "kept": 314
+       },
+       "ES8L_3-1": {
+        "class": "Control",
+        "had": 321,
+        "kept": 314
+       },
+       "ES8L_3-2": {
+        "class": "Control",
+        "had": 321,
+        "kept": 314
+       },
+       "H32R": {
+        "class": "Control",
+        "had": 232,
+        "kept": 232
+       },
+       "H34R": {
+        "class": "VML",
+        "had": 181,
+        "kept": 181
+       },
+       "H36R": {
+        "class": "VML",
+        "had": 147,
+        "kept": 147
+       },
+       "H3R": {
+        "class": "VML",
+        "had": 137,
+        "kept": 137
+       },
+       "H88R": {
+        "class": "VML",
+        "had": 213,
+        "kept": 213
+       },
+       "H8R": {
+        "class": "VML",
+        "had": 187,
+        "kept": 187
+       },
+       "L107R_T1": {
+        "class": "VML",
+        "had": 12,
+        "kept": 12
+       },
+       "L107R_T2": {
+        "class": "VML",
+        "had": 89,
+        "kept": 89
+       },
+       "L107R_T3": {
+        "class": "VML",
+        "had": 12,
+        "kept": 12
+       },
+       "L107R_T4": {
+        "class": "VML",
+        "had": 211,
+        "kept": 211
+       },
+       "L54R_T1": {
+        "class": "VML",
+        "had": 148,
+        "kept": 148
+       },
+       "L54R_T2": {
+        "class": "VML",
+        "had": 88,
+        "kept": 88
+       },
+       "NC11L": {
+        "class": "VML",
+        "had": 408,
+        "kept": 408
+       },
+       "NC11R": {
+        "class": "Control",
+        "had": 322,
+        "kept": 314
+       },
+       "NC12L": {
+        "class": "VML",
+        "had": 720,
+        "kept": 720
+       },
+       "NC7L": {
+        "class": "VML",
+        "had": 597,
+        "kept": 597
+       },
+       "NC7R": {
+        "class": "Control",
+        "had": 322,
+        "kept": 314
+       },
+       "NC8R": {
+        "class": "Control",
+        "had": 322,
+        "kept": 314
+       },
+       "NC9R": {
+        "class": "Control",
+        "had": 321,
+        "kept": 314
+       },
+       "PB13L": {
+        "class": "VML",
+        "had": 597,
+        "kept": 597
+       },
+       "PB14L": {
+        "class": "VML",
+        "had": 558,
+        "kept": 558
+       },
+       "PB21R": {
+        "class": "Control",
+        "had": 322,
+        "kept": 314
+       },
+       "PB32R": {
+        "class": "Control",
+        "had": 322,
+        "kept": 314
+       },
+       "PB4L": {
+        "class": "VML",
+        "had": 716,
+        "kept": 716
+       },
+       "PB8R": {
+        "class": "Control",
+        "had": 322,
+        "kept": 314
+       },
+       "PS1": {
+        "class": "VML",
+        "had": 260,
+        "kept": 260
+       }
+      }
+     },
+     "val": {
+      "per_class": 966,
+      "source_per_class": {
+       "Control": 966,
+       "VML": 1074
+      },
+      "slides": {
+       "Control": 3,
+       "VML": 3
+      },
+      "slide_ids": {
+       "Control": [
+        "NC10R",
+        "PB25R",
+        "PB3R"
+       ],
+       "VML": [
+        "H16R",
+        "L122R",
+        "PB3L"
+       ]
+      },
+      "per_slide_kept": {
+       "H16R": {
+        "class": "VML",
+        "had": 228,
+        "kept": 228
+       },
+       "L122R": {
+        "class": "VML",
+        "had": 193,
+        "kept": 193
+       },
+       "NC10R": {
+        "class": "Control",
+        "had": 322,
+        "kept": 322
+       },
+       "PB25R": {
+        "class": "Control",
+        "had": 322,
+        "kept": 322
+       },
+       "PB3L": {
+        "class": "VML",
+        "had": 653,
+        "kept": 545
+       },
+       "PB3R": {
+        "class": "Control",
+        "had": 322,
+        "kept": 322
+       }
+      }
+     },
+     "test": {
+      "per_class": 3237,
+      "source_per_class": {
+       "Control": 10314,
+       "VML": 3237
+      },
+      "slides": {
+       "Control": 10,
+       "VML": 11
+      },
+      "slide_ids": {
+       "Control": [
+        "ES17L_2",
+        "ES17L_3",
+        "ES18L_1",
+        "ES18L_1-1",
+        "ES18L_1-2",
+        "ES6L",
+        "H28R",
+        "H93R",
+        "L148L",
+        "L155L"
+       ],
+       "VML": [
+        "H13R",
+        "H41R",
+        "H89R",
+        "H91R",
+        "H96R",
+        "L121R",
+        "L130R",
+        "NC8L",
+        "PB24L",
+        "PB36L",
+        "PS2"
+       ]
+      },
+      "per_slide_kept": {
+       "ES17L_2": {
+        "class": "Control",
+        "had": 905,
+        "kept": 326
+       },
+       "ES17L_3": {
+        "class": "Control",
+        "had": 1035,
+        "kept": 326
+       },
+       "ES18L_1": {
+        "class": "Control",
+        "had": 1037,
+        "kept": 326
+       },
+       "ES18L_1-1": {
+        "class": "Control",
+        "had": 1007,
+        "kept": 326
+       },
+       "ES18L_1-2": {
+        "class": "Control",
+        "had": 988,
+        "kept": 326
+       },
+       "ES6L": {
+        "class": "Control",
+        "had": 1225,
+        "kept": 326
+       },
+       "H13R": {
+        "class": "VML",
+        "had": 363,
+        "kept": 363
+       },
+       "H28R": {
+        "class": "Control",
+        "had": 304,
+        "kept": 304
+       },
+       "H41R": {
+        "class": "VML",
+        "had": 348,
+        "kept": 348
+       },
+       "H89R": {
+        "class": "VML",
+        "had": 526,
+        "kept": 526
+       },
+       "H91R": {
+        "class": "VML",
+        "had": 196,
+        "kept": 196
+       },
+       "H93R": {
+        "class": "Control",
+        "had": 338,
+        "kept": 326
+       },
+       "H96R": {
+        "class": "VML",
+        "had": 231,
+        "kept": 231
+       },
+       "L121R": {
+        "class": "VML",
+        "had": 255,
+        "kept": 255
+       },
+       "L130R": {
+        "class": "VML",
+        "had": 92,
+        "kept": 92
+       },
+       "L148L": {
+        "class": "Control",
+        "had": 1501,
+        "kept": 326
+       },
+       "L155L": {
+        "class": "Control",
+        "had": 1974,
+        "kept": 325
+       },
+       "NC8L": {
+        "class": "VML",
+        "had": 408,
+        "kept": 408
+       },
+       "PB24L": {
+        "class": "VML",
+        "had": 176,
+        "kept": 176
+       },
+       "PB36L": {
+        "class": "VML",
+        "had": 301,
+        "kept": 301
+       },
+       "PS2": {
+        "class": "VML",
+        "had": 341,
+        "kept": 341
+       }
+      }
+     }
+    }
+   },
+   "poor_very_poor": {
+    "class_names": [
+     "Poor",
+     "Very poor"
+    ],
+    "splits": {
+     "train": {
+      "per_class": 642,
+      "source_per_class": {
+       "Poor": 668,
+       "Very poor": 642
+      },
+      "slides": {
+       "Poor": 12,
+       "Very poor": 6
+      },
+      "slide_ids": {
+       "Poor": [
+        "ES5L_3",
+        "H16R",
+        "H36R",
+        "H8R",
+        "L54R_T1",
+        "L54R_T2",
+        "NC12L",
+        "NC7L",
+        "PB14L",
+        "PB3L",
+        "PB4L",
+        "PS1"
+       ],
+       "Very poor": [
+        "H34R",
+        "H3R",
+        "L107R_T1",
+        "L107R_T2",
+        "L107R_T3",
+        "L107R_T4"
+       ]
+      },
+      "per_slide_kept": {
+       "ES5L_3": {
+        "class": "Poor",
+        "had": 56,
+        "kept": 54
+       },
+       "H16R": {
+        "class": "Poor",
+        "had": 56,
+        "kept": 54
+       },
+       "H34R": {
+        "class": "Very poor",
+        "had": 181,
+        "kept": 181
+       },
+       "H36R": {
+        "class": "Poor",
+        "had": 56,
+        "kept": 53
+       },
+       "H3R": {
+        "class": "Very poor",
+        "had": 137,
+        "kept": 137
+       },
+       "H8R": {
+        "class": "Poor",
+        "had": 55,
+        "kept": 54
+       },
+       "L107R_T1": {
+        "class": "Very poor",
+        "had": 12,
+        "kept": 12
+       },
+       "L107R_T2": {
+        "class": "Very poor",
+        "had": 89,
+        "kept": 89
+       },
+       "L107R_T3": {
+        "class": "Very poor",
+        "had": 12,
+        "kept": 12
+       },
+       "L107R_T4": {
+        "class": "Very poor",
+        "had": 211,
+        "kept": 211
+       },
+       "L54R_T1": {
+        "class": "Poor",
+        "had": 55,
+        "kept": 54
+       },
+       "L54R_T2": {
+        "class": "Poor",
+        "had": 55,
+        "kept": 54
+       },
+       "NC12L": {
+        "class": "Poor",
+        "had": 56,
+        "kept": 53
+       },
+       "NC7L": {
+        "class": "Poor",
+        "had": 56,
+        "kept": 53
+       },
+       "PB14L": {
+        "class": "Poor",
+        "had": 56,
+        "kept": 53
+       },
+       "PB3L": {
+        "class": "Poor",
+        "had": 55,
+        "kept": 54
+       },
+       "PB4L": {
+        "class": "Poor",
+        "had": 56,
+        "kept": 53
+       },
+       "PS1": {
+        "class": "Poor",
+        "had": 56,
+        "kept": 53
+       }
+      }
+     },
+     "val": {
+      "per_class": 167,
+      "source_per_class": {
+       "Poor": 167,
+       "Very poor": 193
+      },
+      "slides": {
+       "Poor": 3,
+       "Very poor": 1
+      },
+      "slide_ids": {
+       "Poor": [
+        "H88R",
+        "NC11L",
+        "PB13L"
+       ],
+       "Very poor": [
+        "L122R"
+       ]
+      },
+      "per_slide_kept": {
+       "H88R": {
+        "class": "Poor",
+        "had": 55,
+        "kept": 55
+       },
+       "L122R": {
+        "class": "Very poor",
+        "had": 193,
+        "kept": 167
+       },
+       "NC11L": {
+        "class": "Poor",
+        "had": 56,
+        "kept": 56
+       },
+       "PB13L": {
+        "class": "Poor",
+        "had": 56,
+        "kept": 56
+       }
+      }
+     },
+     "test": {
+      "per_class": 543,
+      "source_per_class": {
+       "Poor": 2217,
+       "Very poor": 543
+      },
+      "slides": {
+       "Poor": 6,
+       "Very poor": 3
+      },
+      "slide_ids": {
+       "Poor": [
+        "H13R",
+        "H41R",
+        "H89R",
+        "H96R",
+        "NC8L",
+        "PS2"
+       ],
+       "Very poor": [
+        "H91R",
+        "L121R",
+        "L130R"
+       ]
+      },
+      "per_slide_kept": {
+       "H13R": {
+        "class": "Poor",
+        "had": 363,
+        "kept": 90
+       },
+       "H41R": {
+        "class": "Poor",
+        "had": 348,
+        "kept": 91
+       },
+       "H89R": {
+        "class": "Poor",
+        "had": 526,
+        "kept": 90
+       },
+       "H91R": {
+        "class": "Very poor",
+        "had": 196,
+        "kept": 196
+       },
+       "H96R": {
+        "class": "Poor",
+        "had": 231,
+        "kept": 91
+       },
+       "L121R": {
+        "class": "Very poor",
+        "had": 255,
+        "kept": 255
+       },
+       "L130R": {
+        "class": "Very poor",
+        "had": 92,
+        "kept": 92
+       },
+       "NC8L": {
+        "class": "Poor",
+        "had": 408,
+        "kept": 90
+       },
+       "PS2": {
+        "class": "Poor",
+        "had": 341,
+        "kept": 91
+       }
+      }
+     }
+    }
+   },
+   "multiclass": {
+    "class_names": [
+     "Perfect",
+     "Poor",
+     "Very poor"
+    ],
+    "splits": {
+     "train": {
+      "per_class": 654,
+      "source_per_class": {
+       "Perfect": 697,
+       "Poor": 669,
+       "Very poor": 654
+      },
+      "slides": {
+       "Perfect": 10,
+       "Poor": 12,
+       "Very poor": 6
+      },
+      "slide_ids": {
+       "Perfect": [
+        "ES7L_4",
+        "H32R",
+        "NC10R",
+        "NC7R",
+        "NC9R",
+        "PB21R",
+        "PB25R",
+        "PB32R",
+        "PB3R",
+        "PB8R"
+       ],
+       "Poor": [
+        "ES5L_3",
+        "H16R",
+        "H36R",
+        "H88R",
+        "L54R_T1",
+        "L54R_T2",
+        "NC11L",
+        "NC7L",
+        "PB13L",
+        "PB14L",
+        "PB4L",
+        "PS1"
+       ],
+       "Very poor": [
+        "H3R",
+        "L107R_T1",
+        "L107R_T2",
+        "L107R_T3",
+        "L107R_T4",
+        "L122R"
+       ]
+      },
+      "per_slide_kept": {
+       "ES5L_3": {
+        "class": "Poor",
+        "had": 56,
+        "kept": 55
+       },
+       "ES7L_4": {
+        "class": "Perfect",
+        "had": 69,
+        "kept": 66
+       },
+       "H16R": {
+        "class": "Poor",
+        "had": 56,
+        "kept": 55
+       },
+       "H32R": {
+        "class": "Perfect",
+        "had": 69,
+        "kept": 66
+       },
+       "H36R": {
+        "class": "Poor",
+        "had": 56,
+        "kept": 55
+       },
+       "H3R": {
+        "class": "Very poor",
+        "had": 137,
+        "kept": 137
+       },
+       "H88R": {
+        "class": "Poor",
+        "had": 55,
+        "kept": 55
+       },
+       "L107R_T1": {
+        "class": "Very poor",
+        "had": 12,
+        "kept": 12
+       },
+       "L107R_T2": {
+        "class": "Very poor",
+        "had": 89,
+        "kept": 89
+       },
+       "L107R_T3": {
+        "class": "Very poor",
+        "had": 12,
+        "kept": 12
+       },
+       "L107R_T4": {
+        "class": "Very poor",
+        "had": 211,
+        "kept": 211
+       },
+       "L122R": {
+        "class": "Very poor",
+        "had": 193,
+        "kept": 193
+       },
+       "L54R_T1": {
+        "class": "Poor",
+        "had": 55,
+        "kept": 55
+       },
+       "L54R_T2": {
+        "class": "Poor",
+        "had": 55,
+        "kept": 55
+       },
+       "NC10R": {
+        "class": "Perfect",
+        "had": 70,
+        "kept": 66
+       },
+       "NC11L": {
+        "class": "Poor",
+        "had": 56,
+        "kept": 54
+       },
+       "NC7L": {
+        "class": "Poor",
+        "had": 56,
+        "kept": 54
+       },
+       "NC7R": {
+        "class": "Perfect",
+        "had": 70,
+        "kept": 65
+       },
+       "NC9R": {
+        "class": "Perfect",
+        "had": 69,
+        "kept": 66
+       },
+       "PB13L": {
+        "class": "Poor",
+        "had": 56,
+        "kept": 54
+       },
+       "PB14L": {
+        "class": "Poor",
+        "had": 56,
+        "kept": 54
+       },
+       "PB21R": {
+        "class": "Perfect",
+        "had": 70,
+        "kept": 65
+       },
+       "PB25R": {
+        "class": "Perfect",
+        "had": 70,
+        "kept": 65
+       },
+       "PB32R": {
+        "class": "Perfect",
+        "had": 70,
+        "kept": 65
+       },
+       "PB3R": {
+        "class": "Perfect",
+        "had": 70,
+        "kept": 65
+       },
+       "PB4L": {
+        "class": "Poor",
+        "had": 56,
+        "kept": 54
+       },
+       "PB8R": {
+        "class": "Perfect",
+        "had": 70,
+        "kept": 65
+       },
+       "PS1": {
+        "class": "Poor",
+        "had": 56,
+        "kept": 54
+       }
+      }
+     },
+     "val": {
+      "per_class": 138,
+      "source_per_class": {
+       "Perfect": 138,
+       "Poor": 166,
+       "Very poor": 181
+      },
+      "slides": {
+       "Perfect": 2,
+       "Poor": 3,
+       "Very poor": 1
+      },
+      "slide_ids": {
+       "Perfect": [
+        "NC11R",
+        "NC8R"
+       ],
+       "Poor": [
+        "H8R",
+        "NC12L",
+        "PB3L"
+       ],
+       "Very poor": [
+        "H34R"
+       ]
+      },
+      "per_slide_kept": {
+       "H34R": {
+        "class": "Very poor",
+        "had": 181,
+        "kept": 138
+       },
+       "H8R": {
+        "class": "Poor",
+        "had": 55,
+        "kept": 46
+       },
+       "NC11R": {
+        "class": "Perfect",
+        "had": 69,
+        "kept": 69
+       },
+       "NC12L": {
+        "class": "Poor",
+        "had": 56,
+        "kept": 46
+       },
+       "NC8R": {
+        "class": "Perfect",
+        "had": 69,
+        "kept": 69
+       },
+       "PB3L": {
+        "class": "Poor",
+        "had": 55,
+        "kept": 46
+       }
+      }
+     },
+     "test": {
+      "per_class": 543,
+      "source_per_class": {
+       "Perfect": 8340,
+       "Poor": 2217,
+       "Very poor": 543
+      },
+      "slides": {
+       "Perfect": 9,
+       "Poor": 6,
+       "Very poor": 3
+      },
+      "slide_ids": {
+       "Perfect": [
+        "ES17L_2",
+        "ES17L_3",
+        "ES18L_1",
+        "ES18L_1-1",
+        "ES18L_1-2",
+        "ES6L",
+        "H28R",
+        "H93R",
+        "L148L"
+       ],
+       "Poor": [
+        "H13R",
+        "H41R",
+        "H89R",
+        "H96R",
+        "NC8L",
+        "PS2"
+       ],
+       "Very poor": [
+        "H91R",
+        "L121R",
+        "L130R"
+       ]
+      },
+      "per_slide_kept": {
+       "ES17L_2": {
+        "class": "Perfect",
+        "had": 905,
+        "kept": 61
+       },
+       "ES17L_3": {
+        "class": "Perfect",
+        "had": 1035,
+        "kept": 60
+       },
+       "ES18L_1": {
+        "class": "Perfect",
+        "had": 1037,
+        "kept": 60
+       },
+       "ES18L_1-1": {
+        "class": "Perfect",
+        "had": 1007,
+        "kept": 60
+       },
+       "ES18L_1-2": {
+        "class": "Perfect",
+        "had": 988,
+        "kept": 60
+       },
+       "ES6L": {
+        "class": "Perfect",
+        "had": 1225,
+        "kept": 60
+       },
+       "H13R": {
+        "class": "Poor",
+        "had": 363,
+        "kept": 90
+       },
+       "H28R": {
+        "class": "Perfect",
+        "had": 304,
+        "kept": 61
+       },
+       "H41R": {
+        "class": "Poor",
+        "had": 348,
+        "kept": 91
+       },
+       "H89R": {
+        "class": "Poor",
+        "had": 526,
+        "kept": 90
+       },
+       "H91R": {
+        "class": "Very poor",
+        "had": 196,
+        "kept": 196
+       },
+       "H93R": {
+        "class": "Perfect",
+        "had": 338,
+        "kept": 61
+       },
+       "H96R": {
+        "class": "Poor",
+        "had": 231,
+        "kept": 91
+       },
+       "L121R": {
+        "class": "Very poor",
+        "had": 255,
+        "kept": 255
+       },
+       "L130R": {
+        "class": "Very poor",
+        "had": 92,
+        "kept": 92
+       },
+       "L148L": {
+        "class": "Perfect",
+        "had": 1501,
+        "kept": 60
+       },
+       "NC8L": {
+        "class": "Poor",
+        "had": 408,
+        "kept": 90
+       },
+       "PS2": {
+        "class": "Poor",
+        "had": 341,
+        "kept": 91
+       }
+      }
+     }
+    }
+   }
+  }
+ },
+ "dataset_merge_v4": {
+  "source": "dataset_merge_v3",
+  "label": "Merged rat dataset: template + new slides (from v3)",
+  "tasks": {
+   "control_vml": {
+    "class_names": [
+     "Control",
+     "VML"
+    ],
+    "splits": {
+     "train": {
+      "per_class": 3515,
+      "source_per_class": {
+       "Control": 4028,
+       "VML": 3515
+      },
+      "slides": {
+       "Control": 19,
+       "VML": 11
+      },
+      "slide_ids": {
+       "Control": [
+        "ES12L_4 - Cy5",
+        "ES12L_4-1 - Cy5",
+        "ES12L_4-2 - Cy5",
+        "ES1L_2 - Cy5",
+        "ES1L_3 - Cy5",
+        "ES5L_3 - Cy5",
+        "ES5L_3 - Cy5 dj",
+        "ES6L_ - Cy5",
+        "ES7L_4 - Cy5",
+        "ES8L_3 - Cy5",
+        "ES8L_3-1 - Cy5",
+        "ES8L_3-2 - Cy5",
+        "NC11R",
+        "NC7R",
+        "NC8R",
+        "NC9R",
+        "PB21R",
+        "PB32R",
+        "PB8R"
+       ],
+       "VML": [
+        "H34R_LM",
+        "H3R_LM",
+        "H41R_LM",
+        "H8R_LM",
+        "L107R_T2",
+        "NC11L",
+        "NC12L",
+        "NC7L",
+        "PB14L",
+        "PS1",
+        "pb3l_cy5.h5"
+       ]
+      },
+      "per_slide_kept": {
+       "ES12L_4 - Cy5": {
+        "class": "Control",
+        "had": 334,
+        "kept": 284
+       },
+       "ES12L_4-1 - Cy5": {
+        "class": "Control",
+        "had": 334,
+        "kept": 283
+       },
+       "ES12L_4-2 - Cy5": {
+        "class": "Control",
+        "had": 333,
+        "kept": 284
+       },
+       "ES1L_2 - Cy5": {
+        "class": "Control",
+        "had": 1,
+        "kept": 1
+       },
+       "ES1L_3 - Cy5": {
+        "class": "Control",
+        "had": 1,
+        "kept": 1
+       },
+       "ES5L_3 - Cy5": {
+        "class": "Control",
+        "had": 333,
+        "kept": 284
+       },
+       "ES5L_3 - Cy5 dj": {
+        "class": "Control",
+        "had": 333,
+        "kept": 284
+       },
+       "ES6L_ - Cy5": {
+        "class": "Control",
+        "had": 80,
+        "kept": 80
+       },
+       "ES7L_4 - Cy5": {
+        "class": "Control",
+        "had": 11,
+        "kept": 11
+       },
+       "ES8L_3 - Cy5": {
+        "class": "Control",
+        "had": 1,
+        "kept": 1
+       },
+       "ES8L_3-1 - Cy5": {
+        "class": "Control",
+        "had": 10,
+        "kept": 10
+       },
+       "ES8L_3-2 - Cy5": {
+        "class": "Control",
+        "had": 4,
+        "kept": 4
+       },
+       "H34R_LM": {
+        "class": "VML",
+        "had": 138,
+        "kept": 138
+       },
+       "H3R_LM": {
+        "class": "VML",
+        "had": 274,
+        "kept": 274
+       },
+       "H41R_LM": {
+        "class": "VML",
+        "had": 119,
+        "kept": 119
+       },
+       "H8R_LM": {
+        "class": "VML",
+        "had": 59,
+        "kept": 59
+       },
+       "L107R_T2": {
+        "class": "VML",
+        "had": 6,
+        "kept": 6
+       },
+       "NC11L": {
+        "class": "VML",
+        "had": 408,
+        "kept": 408
+       },
+       "NC11R": {
+        "class": "Control",
+        "had": 322,
+        "kept": 284
+       },
+       "NC12L": {
+        "class": "VML",
+        "had": 720,
+        "kept": 720
+       },
+       "NC7L": {
+        "class": "VML",
+        "had": 597,
+        "kept": 597
+       },
+       "NC7R": {
+        "class": "Control",
+        "had": 322,
+        "kept": 284
+       },
+       "NC8R": {
+        "class": "Control",
+        "had": 322,
+        "kept": 284
+       },
+       "NC9R": {
+        "class": "Control",
+        "had": 321,
+        "kept": 284
+       },
+       "PB14L": {
+        "class": "VML",
+        "had": 558,
+        "kept": 558
+       },
+       "PB21R": {
+        "class": "Control",
+        "had": 322,
+        "kept": 284
+       },
+       "PB32R": {
+        "class": "Control",
+        "had": 322,
+        "kept": 284
+       },
+       "PB8R": {
+        "class": "Control",
+        "had": 322,
+        "kept": 284
+       },
+       "PS1": {
+        "class": "VML",
+        "had": 260,
+        "kept": 260
+       },
+       "pb3l_cy5.h5": {
+        "class": "VML",
+        "had": 376,
+        "kept": 376
+       }
+      }
+     },
+     "val": {
+      "per_class": 966,
+      "source_per_class": {
+       "Control": 966,
+       "VML": 1479
+      },
+      "slides": {
+       "Control": 3,
+       "VML": 3
+      },
+      "slide_ids": {
+       "Control": [
+        "NC10R",
+        "PB25R",
+        "PB3R"
+       ],
+       "VML": [
+        "H13R_LM",
+        "PB4L",
+        "pb13l_cy5_.h5"
+       ]
+      },
+      "per_slide_kept": {
+       "H13R_LM": {
+        "class": "VML",
+        "had": 314,
+        "kept": 314
+       },
+       "NC10R": {
+        "class": "Control",
+        "had": 322,
+        "kept": 322
+       },
+       "PB25R": {
+        "class": "Control",
+        "had": 322,
+        "kept": 322
+       },
+       "PB3R": {
+        "class": "Control",
+        "had": 322,
+        "kept": 322
+       },
+       "PB4L": {
+        "class": "VML",
+        "had": 716,
+        "kept": 326
+       },
+       "pb13l_cy5_.h5": {
+        "class": "VML",
+        "had": 449,
+        "kept": 326
+       }
+      }
+     },
+     "test": {
+      "per_class": 1482,
+      "source_per_class": {
+       "Control": 1959,
+       "VML": 1482
+      },
+      "slides": {
+       "Control": 6,
+       "VML": 4
+      },
+      "slide_ids": {
+       "Control": [
+        "ES17L_2 - Cy5",
+        "ES17L_3 - Cy5",
+        "ES18L_1 - Cy5",
+        "ES18L_1-1 - Cy5",
+        "ES18L_1-2 - Cy5",
+        "L155L_TRITC-010"
+       ],
+       "VML": [
+        "NC8L",
+        "PS2",
+        "pb24l_cy5_.h5",
+        "pb36l_cy5_.h5"
+       ]
+      },
+      "per_slide_kept": {
+       "ES17L_2 - Cy5": {
+        "class": "Control",
+        "had": 175,
+        "kept": 175
+       },
+       "ES17L_3 - Cy5": {
+        "class": "Control",
+        "had": 395,
+        "kept": 295
+       },
+       "ES18L_1 - Cy5": {
+        "class": "Control",
+        "had": 380,
+        "kept": 295
+       },
+       "ES18L_1-1 - Cy5": {
+        "class": "Control",
+        "had": 432,
+        "kept": 295
+       },
+       "ES18L_1-2 - Cy5": {
+        "class": "Control",
+        "had": 449,
+        "kept": 294
+       },
+       "L155L_TRITC-010": {
+        "class": "Control",
+        "had": 128,
+        "kept": 128
+       },
+       "NC8L": {
+        "class": "VML",
+        "had": 408,
+        "kept": 408
+       },
+       "PS2": {
+        "class": "VML",
+        "had": 341,
+        "kept": 341
+       },
+       "pb24l_cy5_.h5": {
+        "class": "VML",
+        "had": 360,
+        "kept": 360
+       },
+       "pb36l_cy5_.h5": {
+        "class": "VML",
+        "had": 373,
+        "kept": 373
+       }
+      }
+     }
+    }
+   },
+   "poor_very_poor": {
+    "class_names": [
+     "Poor",
+     "Very poor"
+    ],
+    "splits": {
+     "train": {
+      "per_class": 693,
+      "source_per_class": {
+       "Poor": 1205,
+       "Very poor": 693
+      },
+      "slides": {
+       "Poor": 10,
+       "Very poor": 3
+      },
+      "slide_ids": {
+       "Poor": [
+        "ES5L_3 - Cy5",
+        "H16R_LM",
+        "H36R_LM",
+        "H8R_LM",
+        "NC12L",
+        "NC7L",
+        "PB14L",
+        "PB4L",
+        "PS1",
+        "pb13l_cy5_.h5"
+       ],
+       "Very poor": [
+        "H34R_LM",
+        "H3R_LM",
+        "L107R_T2"
+       ]
+      },
+      "per_slide_kept": {
+       "ES5L_3 - Cy5": {
+        "class": "Poor",
+        "had": 238,
+        "kept": 82
+       },
+       "H16R_LM": {
+        "class": "Poor",
+        "had": 177,
+        "kept": 83
+       },
+       "H34R_LM": {
+        "class": "Very poor",
+        "had": 271,
+        "kept": 271
+       },
+       "H36R_LM": {
+        "class": "Poor",
+        "had": 168,
+        "kept": 83
+       },
+       "H3R_LM": {
+        "class": "Very poor",
+        "had": 410,
+        "kept": 410
+       },
+       "H8R_LM": {
+        "class": "Poor",
+        "had": 104,
+        "kept": 83
+       },
+       "L107R_T2": {
+        "class": "Very poor",
+        "had": 12,
+        "kept": 12
+       },
+       "NC12L": {
+        "class": "Poor",
+        "had": 56,
+        "kept": 56
+       },
+       "NC7L": {
+        "class": "Poor",
+        "had": 56,
+        "kept": 56
+       },
+       "PB14L": {
+        "class": "Poor",
+        "had": 56,
+        "kept": 56
+       },
+       "PB4L": {
+        "class": "Poor",
+        "had": 56,
+        "kept": 56
+       },
+       "PS1": {
+        "class": "Poor",
+        "had": 56,
+        "kept": 56
+       },
+       "pb13l_cy5_.h5": {
+        "class": "Poor",
+        "had": 238,
+        "kept": 82
+       }
+      }
+     },
+     "val": {
+      "per_class": 174,
+      "source_per_class": {
+       "Poor": 174,
+       "Very poor": 686
+      },
+      "slides": {
+       "Poor": 2,
+       "Very poor": 1
+      },
+      "slide_ids": {
+       "Poor": [
+        "H88R_LM",
+        "NC11L"
+       ],
+       "Very poor": [
+        "L122R_TRITC"
+       ]
+      },
+      "per_slide_kept": {
+       "H88R_LM": {
+        "class": "Poor",
+        "had": 118,
+        "kept": 118
+       },
+       "L122R_TRITC": {
+        "class": "Very poor",
+        "had": 686,
+        "kept": 174
+       },
+       "NC11L": {
+        "class": "Poor",
+        "had": 56,
+        "kept": 56
+       }
+      }
+     },
+     "test": {
+      "per_class": 1711,
+      "source_per_class": {
+       "Poor": 1748,
+       "Very poor": 1711
+      },
+      "slides": {
+       "Poor": 6,
+       "Very poor": 3
+      },
+      "slide_ids": {
+       "Poor": [
+        "H13R_LM",
+        "H41R_LM",
+        "H89R_LM",
+        "H96R_LM",
+        "NC8L",
+        "PS2"
+       ],
+       "Very poor": [
+        "H91R_LM",
+        "L121R_TRITC",
+        "L130R_TRITC"
+       ]
+      },
+      "per_slide_kept": {
+       "H13R_LM": {
+        "class": "Poor",
+        "had": 389,
+        "kept": 380
+       },
+       "H41R_LM": {
+        "class": "Poor",
+        "had": 192,
+        "kept": 192
+       },
+       "H89R_LM": {
+        "class": "Poor",
+        "had": 181,
+        "kept": 181
+       },
+       "H91R_LM": {
+        "class": "Very poor",
+        "had": 226,
+        "kept": 226
+       },
+       "H96R_LM": {
+        "class": "Poor",
+        "had": 237,
+        "kept": 237
+       },
+       "L121R_TRITC": {
+        "class": "Very poor",
+        "had": 811,
+        "kept": 811
+       },
+       "L130R_TRITC": {
+        "class": "Very poor",
+        "had": 674,
+        "kept": 674
+       },
+       "NC8L": {
+        "class": "Poor",
+        "had": 408,
+        "kept": 380
+       },
+       "PS2": {
+        "class": "Poor",
+        "had": 341,
+        "kept": 341
+       }
+      }
+     }
+    }
+   },
+   "multiclass": {
+    "class_names": [
+     "Perfect",
+     "Poor",
+     "Very poor"
+    ],
+    "splits": {
+     "train": {
+      "per_class": 969,
+      "source_per_class": {
+       "Perfect": 1169,
+       "Poor": 1219,
+       "Very poor": 969
+      },
+      "slides": {
+       "Perfect": 11,
+       "Poor": 10,
+       "Very poor": 3
+      },
+      "slide_ids": {
+       "Perfect": [
+        "ES18L_1-1 - Cy5",
+        "ES18L_1-2 - Cy5",
+        "ES7L_4 - Cy5",
+        "H32R_LM",
+        "NC11R",
+        "NC8R",
+        "NC9R",
+        "PB21R",
+        "PB32R",
+        "PB3R",
+        "PB8R"
+       ],
+       "Poor": [
+        "ES5L_3 - Cy5",
+        "H16R_LM",
+        "H36R_LM",
+        "H88R_LM",
+        "NC11L",
+        "NC12L",
+        "PB14L",
+        "PB4L",
+        "PS1",
+        "pb13l_cy5_.h5"
+       ],
+       "Very poor": [
+        "H34R_LM",
+        "L107R_T2",
+        "L122R_TRITC"
+       ]
+      },
+      "per_slide_kept": {
+       "ES18L_1-1 - Cy5": {
+        "class": "Perfect",
+        "had": 232,
+        "kept": 153
+       },
+       "ES18L_1-2 - Cy5": {
+        "class": "Perfect",
+        "had": 232,
+        "kept": 153
+       },
+       "ES5L_3 - Cy5": {
+        "class": "Poor",
+        "had": 238,
+        "kept": 143
+       },
+       "ES7L_4 - Cy5": {
+        "class": "Perfect",
+        "had": 22,
+        "kept": 22
+       },
+       "H16R_LM": {
+        "class": "Poor",
+        "had": 177,
+        "kept": 143
+       },
+       "H32R_LM": {
+        "class": "Perfect",
+        "had": 196,
+        "kept": 154
+       },
+       "H34R_LM": {
+        "class": "Very poor",
+        "had": 271,
+        "kept": 271
+       },
+       "H36R_LM": {
+        "class": "Poor",
+        "had": 168,
+        "kept": 143
+       },
+       "H88R_LM": {
+        "class": "Poor",
+        "had": 118,
+        "kept": 118
+       },
+       "L107R_T2": {
+        "class": "Very poor",
+        "had": 12,
+        "kept": 12
+       },
+       "L122R_TRITC": {
+        "class": "Very poor",
+        "had": 686,
+        "kept": 686
+       },
+       "NC11L": {
+        "class": "Poor",
+        "had": 56,
+        "kept": 56
+       },
+       "NC11R": {
+        "class": "Perfect",
+        "had": 69,
+        "kept": 69
+       },
+       "NC12L": {
+        "class": "Poor",
+        "had": 56,
+        "kept": 56
+       },
+       "NC8R": {
+        "class": "Perfect",
+        "had": 69,
+        "kept": 69
+       },
+       "NC9R": {
+        "class": "Perfect",
+        "had": 69,
+        "kept": 69
+       },
+       "PB14L": {
+        "class": "Poor",
+        "had": 56,
+        "kept": 56
+       },
+       "PB21R": {
+        "class": "Perfect",
+        "had": 70,
+        "kept": 70
+       },
+       "PB32R": {
+        "class": "Perfect",
+        "had": 70,
+        "kept": 70
+       },
+       "PB3R": {
+        "class": "Perfect",
+        "had": 70,
+        "kept": 70
+       },
+       "PB4L": {
+        "class": "Poor",
+        "had": 56,
+        "kept": 56
+       },
+       "PB8R": {
+        "class": "Perfect",
+        "had": 70,
+        "kept": 70
+       },
+       "PS1": {
+        "class": "Poor",
+        "had": 56,
+        "kept": 56
+       },
+       "pb13l_cy5_.h5": {
+        "class": "Poor",
+        "had": 238,
+        "kept": 142
+       }
+      }
+     },
+     "val": {
+      "per_class": 160,
+      "source_per_class": {
+       "Perfect": 210,
+       "Poor": 160,
+       "Very poor": 410
+      },
+      "slides": {
+       "Perfect": 3,
+       "Poor": 2,
+       "Very poor": 1
+      },
+      "slide_ids": {
+       "Perfect": [
+        "NC10R",
+        "NC7R",
+        "PB25R"
+       ],
+       "Poor": [
+        "H8R_LM",
+        "NC7L"
+       ],
+       "Very poor": [
+        "H3R_LM"
+       ]
+      },
+      "per_slide_kept": {
+       "H3R_LM": {
+        "class": "Very poor",
+        "had": 410,
+        "kept": 160
+       },
+       "H8R_LM": {
+        "class": "Poor",
+        "had": 104,
+        "kept": 104
+       },
+       "NC10R": {
+        "class": "Perfect",
+        "had": 70,
+        "kept": 54
+       },
+       "NC7L": {
+        "class": "Poor",
+        "had": 56,
+        "kept": 56
+       },
+       "NC7R": {
+        "class": "Perfect",
+        "had": 70,
+        "kept": 53
+       },
+       "PB25R": {
+        "class": "Perfect",
+        "had": 70,
+        "kept": 53
+       }
+      }
+     },
+     "test": {
+      "per_class": 443,
+      "source_per_class": {
+       "Perfect": 443,
+       "Poor": 1748,
+       "Very poor": 1711
+      },
+      "slides": {
+       "Perfect": 5,
+       "Poor": 6,
+       "Very poor": 3
+      },
+      "slide_ids": {
+       "Perfect": [
+        "ES17L_3 - Cy5",
+        "ES6L_ - Cy5",
+        "H28R_LM",
+        "H93R_LM",
+        "L148L_TRITC"
+       ],
+       "Poor": [
+        "H13R_LM",
+        "H41R_LM",
+        "H89R_LM",
+        "H96R_LM",
+        "NC8L",
+        "PS2"
+       ],
+       "Very poor": [
+        "H91R_LM",
+        "L121R_TRITC",
+        "L130R_TRITC"
+       ]
+      },
+      "per_slide_kept": {
+       "ES17L_3 - Cy5": {
+        "class": "Perfect",
+        "had": 204,
+        "kept": 204
+       },
+       "ES6L_ - Cy5": {
+        "class": "Perfect",
+        "had": 31,
+        "kept": 31
+       },
+       "H13R_LM": {
+        "class": "Poor",
+        "had": 389,
+        "kept": 74
+       },
+       "H28R_LM": {
+        "class": "Perfect",
+        "had": 27,
+        "kept": 27
+       },
+       "H41R_LM": {
+        "class": "Poor",
+        "had": 192,
+        "kept": 74
+       },
+       "H89R_LM": {
+        "class": "Poor",
+        "had": 181,
+        "kept": 74
+       },
+       "H91R_LM": {
+        "class": "Very poor",
+        "had": 226,
+        "kept": 148
+       },
+       "H93R_LM": {
+        "class": "Perfect",
+        "had": 173,
+        "kept": 173
+       },
+       "H96R_LM": {
+        "class": "Poor",
+        "had": 237,
+        "kept": 74
+       },
+       "L121R_TRITC": {
+        "class": "Very poor",
+        "had": 811,
+        "kept": 147
+       },
+       "L130R_TRITC": {
+        "class": "Very poor",
+        "had": 674,
+        "kept": 148
+       },
+       "L148L_TRITC": {
+        "class": "Perfect",
+        "had": 8,
+        "kept": 8
+       },
+       "NC8L": {
+        "class": "Poor",
+        "had": 408,
+        "kept": 73
+       },
+       "PS2": {
+        "class": "Poor",
+        "had": 341,
+        "kept": 74
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

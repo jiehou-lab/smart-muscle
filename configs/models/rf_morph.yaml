@@ -1,0 +1,5 @@
+# Random forest on [flattened pixels | z-scored avg CSA, myofiber count].
+model: rf_morph
+family: RF
+uses_morphometrics: true
+morphometric_only: false

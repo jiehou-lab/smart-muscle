@@ -1,0 +1,309 @@
+{
+ "rat": {
+  "lr__control_vml": {
+   "patch_macro": 0.6483,
+   "wsi_macro": 0.5,
+   "patch_f1_pos": 0.7596,
+   "wsi_f1_pos": 0.5,
+   "patch_acc": 0.6835,
+   "wsi_acc": 0.5,
+   "auc": 1.0,
+   "n_wsi": 8,
+   "n_patch": 1466
+  },
+  "lr_morph__control_vml": {
+   "patch_macro": 0.6492,
+   "wsi_macro": 0.5,
+   "patch_f1_pos": 0.76,
+   "wsi_f1_pos": 0.5,
+   "patch_acc": 0.6842,
+   "wsi_acc": 0.5,
+   "auc": 1.0,
+   "n_wsi": 8,
+   "n_patch": 1466
+  },
+  "xgb__control_vml": {
+   "patch_macro": 0.9713,
+   "wsi_macro": 1.0,
+   "patch_f1_pos": 0.9721,
+   "wsi_f1_pos": 1.0,
+   "patch_acc": 0.9714,
+   "wsi_acc": 1.0,
+   "auc": 0.9999962776085123,
+   "n_wsi": 8,
+   "n_patch": 1466
+  },
+  "xgb_morph__control_vml": {
+   "patch_macro": 1.0,
+   "wsi_macro": 1.0,
+   "patch_f1_pos": 1.0,
+   "wsi_f1_pos": 1.0,
+   "patch_acc": 1.0,
+   "wsi_acc": 1.0,
+   "auc": 1.0,
+   "n_wsi": 8,
+   "n_patch": 1466
+  },
+  "cnn__control_vml": {
+   "patch_macro": 0.9638,
+   "wsi_macro": 1.0,
+   "patch_f1_pos": 0.9651,
+   "wsi_f1_pos": 1.0,
+   "patch_acc": 0.9638,
+   "wsi_acc": 1.0,
+   "auc": 0.9984700970985819,
+   "n_wsi": 8,
+   "n_patch": 1466
+  },
+  "cnn_morph__control_vml": {
+   "patch_macro": 1.0,
+   "wsi_macro": 1.0,
+   "patch_f1_pos": 1.0,
+   "wsi_f1_pos": 1.0,
+   "patch_acc": 1.0,
+   "wsi_acc": 1.0,
+   "auc": 1.0,
+   "n_wsi": 8,
+   "n_patch": 1466
+  },
+  "mlp_morph__control_vml": {
+   "patch_macro": 1.0,
+   "wsi_macro": 1.0,
+   "patch_f1_pos": 1.0,
+   "wsi_f1_pos": 1.0,
+   "patch_acc": 1.0,
+   "wsi_acc": 1.0,
+   "auc": 1.0,
+   "n_wsi": 8,
+   "n_patch": 1466
+  },
+  "lr__poor_very_poor": {
+   "patch_macro": 0.5508,
+   "wsi_macro": 0.4857,
+   "patch_f1_pos": 0.5912,
+   "wsi_f1_pos": 0.5714,
+   "patch_acc": 0.5544,
+   "wsi_acc": 0.5,
+   "auc": 0.5838679012345679,
+   "n_wsi": 6,
+   "n_patch": 1800
+  },
+  "lr_morph__poor_very_poor": {
+   "patch_macro": 0.5531,
+   "wsi_macro": 0.4857,
+   "patch_f1_pos": 0.5929,
+   "wsi_f1_pos": 0.5714,
+   "patch_acc": 0.5567,
+   "wsi_acc": 0.5,
+   "auc": 0.5862567901234568,
+   "n_wsi": 6,
+   "n_patch": 1800
+  },
+  "xgb__poor_very_poor": {
+   "patch_macro": 0.6627,
+   "wsi_macro": 0.8286,
+   "patch_f1_pos": 0.721,
+   "wsi_f1_pos": 0.8,
+   "patch_acc": 0.6728,
+   "wsi_acc": 0.8333,
+   "auc": 0.7671938271604938,
+   "n_wsi": 6,
+   "n_patch": 1800
+  },
+  "xgb_morph__poor_very_poor": {
+   "patch_macro": 0.9889,
+   "wsi_macro": 1.0,
+   "patch_f1_pos": 0.9889,
+   "wsi_f1_pos": 1.0,
+   "patch_acc": 0.9889,
+   "wsi_acc": 1.0,
+   "auc": 0.999562962962963,
+   "n_wsi": 6,
+   "n_patch": 1800
+  },
+  "cnn__poor_very_poor": {
+   "patch_macro": 0.8493,
+   "wsi_macro": 0.7778,
+   "patch_f1_pos": 0.844,
+   "wsi_f1_pos": 0.6667,
+   "patch_acc": 0.8494,
+   "wsi_acc": 0.8333,
+   "auc": 0.9294851851851852,
+   "n_wsi": 6,
+   "n_patch": 1800
+  },
+  "cnn_morph__poor_very_poor": {
+   "patch_macro": 0.9983,
+   "wsi_macro": 1.0,
+   "patch_f1_pos": 0.9983,
+   "wsi_f1_pos": 1.0,
+   "patch_acc": 0.9983,
+   "wsi_acc": 1.0,
+   "auc": 1.0,
+   "n_wsi": 6,
+   "n_patch": 1800
+  },
+  "mlp_morph__poor_very_poor": {
+   "patch_macro": 0.8724,
+   "wsi_macro": 0.7778,
+   "patch_f1_pos": 0.8564,
+   "wsi_f1_pos": 0.6667,
+   "patch_acc": 0.8744,
+   "wsi_acc": 0.8333,
+   "auc": 1.0,
+   "n_wsi": 6,
+   "n_patch": 1800
+  },
+  "lr__multiclass": {
+   "patch_macro": 0.4739,
+   "wsi_macro": 0.4924,
+   "patch_f1_pos": 0.3145,
+   "wsi_f1_pos": 0.0,
+   "patch_acc": 0.4816,
+   "wsi_acc": 0.6364,
+   "auc": 0.6712450339449713,
+   "n_wsi": 11,
+   "n_patch": 1329
+  },
+  "lr_morph__multiclass": {
+   "patch_macro": 0.4745,
+   "wsi_macro": 0.4924,
+   "patch_f1_pos": 0.3149,
+   "wsi_f1_pos": 0.0,
+   "patch_acc": 0.4823,
+   "wsi_acc": 0.6364,
+   "auc": 0.6740340078166004,
+   "n_wsi": 11,
+   "n_patch": 1329
+  },
+  "xgb__multiclass": {
+   "patch_macro": 0.4701,
+   "wsi_macro": 0.3,
+   "patch_f1_pos": 0.5928,
+   "wsi_f1_pos": 0.4,
+   "patch_acc": 0.4944,
+   "wsi_acc": 0.3636,
+   "auc": 0.7551766718131896,
+   "n_wsi": 11,
+   "n_patch": 1329
+  },
+  "xgb_morph__multiclass": {
+   "patch_macro": 0.8262,
+   "wsi_macro": 0.7662,
+   "patch_f1_pos": 0.9725,
+   "wsi_f1_pos": 1.0,
+   "patch_acc": 0.8315,
+   "wsi_acc": 0.7273,
+   "auc": 0.9711183241698048,
+   "n_wsi": 11,
+   "n_patch": 1329
+  },
+  "cnn__multiclass": {
+   "patch_macro": 0.6009,
+   "wsi_macro": 0.5,
+   "patch_f1_pos": 0.6874,
+   "wsi_f1_pos": 0.5,
+   "patch_acc": 0.6554,
+   "wsi_acc": 0.6364,
+   "auc": 0.8466973080117605,
+   "n_wsi": 11,
+   "n_patch": 1329
+  },
+  "cnn_morph__multiclass": {
+   "patch_macro": 0.9382,
+   "wsi_macro": 1.0,
+   "patch_f1_pos": 1.0,
+   "wsi_f1_pos": 1.0,
+   "patch_acc": 0.9383,
+   "wsi_acc": 1.0,
+   "auc": 0.9940424324879787,
+   "n_wsi": 11,
+   "n_patch": 1329
+  },
+  "mlp_morph__multiclass": {
+   "patch_macro": 0.8031,
+   "wsi_macro": 0.7662,
+   "patch_f1_pos": 1.0,
+   "wsi_f1_pos": 1.0,
+   "patch_acc": 0.8126,
+   "wsi_acc": 0.7273,
+   "auc": 0.9379232505643341,
+   "n_wsi": 11,
+   "n_patch": 1329
+  }
+ },
+ "human": {
+  "cnn__uninjured_1mo": {
+   "patch_f1": 0.3469,
+   "wsi_f1": 0.3529,
+   "patch_macro": 0.5049,
+   "wsi_macro": 0.5278,
+   "patch_acc": 0.5553,
+   "wsi_acc": 0.5926,
+   "auc": 0.6836854200034186,
+   "wsi_called0": 3,
+   "wsi_true0": 14,
+   "n_wsi": 27
+  },
+  "cnn_morph__uninjured_1mo": {
+   "patch_f1": 0.8077,
+   "wsi_f1": 0.8485,
+   "patch_macro": 0.7444,
+   "wsi_macro": 0.8052,
+   "patch_acc": 0.7601,
+   "wsi_acc": 0.8148,
+   "auc": 0.8697479789570974,
+   "wsi_called0": 19,
+   "wsi_true0": 14,
+   "n_wsi": 27
+  },
+  "cnn__uninjured_4mo": {
+   "patch_f1": 0.3443,
+   "wsi_f1": 0.3529,
+   "patch_macro": 0.4793,
+   "wsi_macro": 0.4991,
+   "patch_acc": 0.5142,
+   "wsi_acc": 0.5417,
+   "auc": 0.6260938743038982,
+   "wsi_called0": 3,
+   "wsi_true0": 14,
+   "n_wsi": 24
+  },
+  "cnn_morph__uninjured_4mo": {
+   "patch_f1": 0.7712,
+   "wsi_f1": 0.7778,
+   "patch_macro": 0.6114,
+   "wsi_macro": 0.5556,
+   "patch_acc": 0.6771,
+   "wsi_acc": 0.6667,
+   "auc": 0.8198991309046697,
+   "wsi_called0": 22,
+   "wsi_true0": 14,
+   "n_wsi": 24
+  },
+  "cnn__1mo_4mo": {
+   "patch_f1": 0.6189,
+   "wsi_f1": 0.6061,
+   "patch_macro": 0.4817,
+   "wsi_macro": 0.303,
+   "patch_acc": 0.518,
+   "wsi_acc": 0.4348,
+   "auc": 0.5769481006956608,
+   "wsi_called0": 23,
+   "wsi_true0": 10,
+   "n_wsi": 23
+  },
+  "cnn_morph__1mo_4mo": {
+   "patch_f1": 0.6278,
+   "wsi_f1": 0.6061,
+   "patch_macro": 0.3139,
+   "wsi_macro": 0.303,
+   "patch_acc": 0.4576,
+   "wsi_acc": 0.4348,
+   "auc": 0.6275545101179454,
+   "wsi_called0": 23,
+   "wsi_true0": 10,
+   "n_wsi": 23
+  }
+ }
+}

@@ -1,0 +1,5 @@
+# Logistic regression on [flattened pixels | z-scored avg CSA, myofiber count].
+model: lr_morph
+family: LR
+uses_morphometrics: true
+morphometric_only: false

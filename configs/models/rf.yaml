@@ -1,0 +1,5 @@
+# Random forest on flattened, ImageNet-normalised 3x224x224 patch pixels.
+model: rf
+family: RF
+uses_morphometrics: false
+morphometric_only: false

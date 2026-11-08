@@ -1,0 +1,20 @@
+# Task: Poor versus Very poor recovery (binary).
+# Published split: 11 train / 6 test WSIs -> 4,316 train / 1,899 test patches.
+task: poor_very_poor
+data:
+  train: {img_path: images_latest_3_26/poor_very_poor/train}
+  test:  {img_path: images_latest_3_26/poor_very_poor/test}
+  morphometrics_path: images_latest_3_26/Perfect_poor_very_poor.xlsx
+  num_classes: 2
+  # Severity-ordered: class index increases with injury, positive = most
+  # injured. The folders on disk are the other way round -- verified against the
+  # workbook's `Rank Group` over all 16 slides, folder 0 is Very poor (7/7,
+  # mean 1,835 myofibres) and folder 1 is Poor (9/9, mean 6,717) -- so they are
+  # swapped as they are read. No image is moved. See vmlevaluator/labels.py.
+  folder_to_class: [1, 0]
+  class_names: [Poor, Very poor]
+  positive_class: Very poor
+  # P(Very poor) must not increase with fibre calibre or fibre count.
+  morphometric_monotone_sign: -1
+optimization:
+  patience: 8

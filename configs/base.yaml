@@ -1,0 +1,102 @@
+# ---------------------------------------------------------------------------
+# VMLevaluator — base configuration
+#
+# Every experiment config is  base.yaml  +  tasks/<task>.yaml  +  models/<model>.yaml
+# merged in that order (later keys win). Merging is done by
+# `vmlevaluator.config.load_experiment(task, model)`.
+#
+# Paths are RELATIVE to the active data root, which is
+#   $VML_DATA_ROOT            (full dataset)  — set this to reproduce the paper
+#   <package>/data_example    (bundled subset) — the default
+# ---------------------------------------------------------------------------
+
+data:
+  # Relative paths, resolved against the data root at load time.
+  train: {img_path: null}
+  test: {img_path: null}
+  morphometrics_path: null       # Excel file with slide-level CSA / fiber count
+  num_classes: 2
+  class_names: [Class 0, Class 1]
+  batch_size: 64
+  num_workers: 0
+  # >0 (with num_workers: 0) loads patches on a thread pool instead of worker
+  # processes -- the fix for Windows paging-file errors. See data/loaders.py.
+  loader_threads: 0
+  # Random horizontal/vertical flips on the torch train loader. On for the
+  # published dataset; a dataset that already holds flipped copies on disk
+  # switches it off from its dataset.yaml (see vmlevaluator/config.py).
+  online_flips: true
+  # Slide-level validation split carved out of train for checkpoint selection
+  # and early stopping, e.g. {fraction: 0.2, group_by: animal}. null = none:
+  # the published runs select on the test split (see train/torch_trainer.py).
+  validation: null
+  # true = ignore augmented copies (files tagged __a-<tag>) and train on
+  # original patches only, e.g. to rely on online_flips instead.
+  exclude_augmented: false
+
+environment:
+  seed: 95
+  gpu_id: 0
+  # true = deterministic GPU kernels (cuDNN autotuning off), somewhat slower.
+  # Bit-reproducible image-model training also needs data.loader_threads: 0
+  # (threaded loading makes the random-flip order timing-dependent).
+  # tools/train_eval_all.py sets true for the published runs.
+  deterministic: false
+
+optimization:                     # torch models only
+  learning_rate: 5.0e-4
+  min_learning_rate: 5.0e-6
+  weight_decay: 1.0e-5
+  gamma: 0.8
+  epochs: 100
+  patience: 10
+  scheduler: cosine               # cosine | exponential | constant
+
+models:
+  timm:
+    model_name: resnet50
+    pretrained: true
+  numerical:
+    embed_dim: 32
+    fusion_hidden_dim: 256
+    dropout_prob: 0.1
+
+lr:                               # scikit-learn LogisticRegression
+  max_iter: 5000
+  solver: lbfgs
+  C: 1.0
+  class_weight: balanced
+
+rf:                               # Random forest (the non-deep baseline)
+  n_estimators: 300
+  max_depth: null                 # grow until leaves are pure / min_samples_leaf
+  max_features: sqrt              # the standard decorrelating choice
+  min_samples_leaf: 2
+  min_samples_split: 2
+  bootstrap: true
+  class_weight: balanced_subsample # rebalanced within each bootstrap sample
+  n_jobs: 2
+  monotone_morphometrics: false    # not used in the manuscript
+
+# LR/RF on splits whose flattened features exceed max_in_memory_gb are fitted
+# chunk by chunk on every patch (see train/sklearn_trainer.py). The published
+# dataset fits well under the budget and takes the original in-memory path.
+streaming:
+  max_in_memory_gb: 4.0
+  chunk_patches: 2000
+  lr_epochs: 5
+
+output:
+  root: null                      # resolved to $VML_RESULTS_ROOT or <package>/results
+  name: null                      # resolved to "<model>__<task>"
+  overwrite: true
+
+# QUICK_RUN keeps notebooks executable in minutes on the bundled example data.
+# Set enabled: false (or QUICK_RUN = False in a notebook) for the published run.
+quick_run:
+  enabled: false
+  epochs: 2
+  patience: 1
+  max_patches_per_class: 50
+  max_iter: 200                   # LR
+  n_estimators: 30                # RF

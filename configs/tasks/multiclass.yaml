@@ -1,0 +1,26 @@
+# Task: three-class severity grading (Perfect / Poor / Very poor).
+# Published split: 15 train / 11 test WSIs -> 5,311 train / 2,342 test patches.
+task: multiclass
+data:
+  train: {img_path: images_multiclass/multiclass_new/train}
+  test:  {img_path: images_multiclass/multiclass_new/test}
+  morphometrics_path: images_multiclass/multiclass_new/Perfect_poor_very_poor.xlsx
+  num_classes: 3
+  # Severity-ordered: class index increases with injury. Folder order verified
+  # against the workbook over all 26 slides, not assumed from the names:
+  #   folder 0 -> Perfect    mean 9,293 myofibres, mean CSA 1,849 um^2
+  #   folder 1 -> Very poor  mean 1,835 myofibres, mean CSA   924 um^2
+  #   folder 2 -> Poor       mean 6,717 myofibres, mean CSA 1,635 um^2
+  # so folders 1 and 2 are swapped as they are read. Macro-F1, accuracy and the
+  # confusion matrix are permutation-invariant; only the axis labels move.
+  folder_to_class: [0, 2, 1]
+  class_names: [Perfect, Poor, Very poor]
+  # No single positive class for a three-class task; macro-F1 is the headline,
+  # with a one-vs-rest column for the most injured class (index 2, Very poor).
+  positive_class: null
+  most_injured_class: Very poor
+  # Monotone constraints are undefined here: scikit-learn's monotonic_cst is
+  # binary-only. An ordinal or one-vs-rest formulation would be needed.
+  morphometric_monotone_sign: 0
+optimization:
+  patience: 8

@@ -1,0 +1,50 @@
+cff-version: 1.2.0
+message: "If you use this software or its results, please cite the associated paper."
+title: "smart-muscle: reproducible pipeline for deep-learning assessment of skeletal muscle injury histology"
+version: 1.0.0
+authors:
+  - family-names: Nkrumah
+    given-names: Isaac
+    affiliation: "Department of Computer Science, Saint Louis University"
+    email: isaac.nkrumah@slu.edu
+  - family-names: Ridolfo
+    given-names: Amelia
+    affiliation: "Department of Biomedical Engineering, Saint Louis University"
+  - family-names: Formoso Godoy
+    given-names: Carlos Alejandro
+    affiliation: "Department of Biomedical Engineering, Saint Louis University"
+  - family-names: Latham
+    given-names: Christine M.
+    affiliation: "Center for Muscle Biology, University of Kentucky"
+  - family-names: Fry
+    given-names: Christopher S.
+    affiliation: "Center for Muscle Biology, University of Kentucky"
+  - family-names: Garg
+    given-names: Koyal
+    affiliation: "Department of Biomedical Engineering, Saint Louis University"
+  - family-names: Hou
+    given-names: Jie
+    affiliation: "Department of Computational Mathematics, Science and Engineering, Michigan State University"
+preferred-citation:
+  type: article
+  title: "Integrating Histology and Morphometrics for Deep Learning-Based Assessment of Skeletal Muscle Injury"
+  authors:
+    - family-names: Nkrumah
+      given-names: Isaac
+    - family-names: Ridolfo
+      given-names: Amelia
+    - family-names: Formoso Godoy
+      given-names: Carlos Alejandro
+    - family-names: Latham
+      given-names: Christine M.
+    - family-names: Fry
+      given-names: Christopher S.
+    - family-names: Garg
+      given-names: Koyal
+    - family-names: Hou
+      given-names: Jie
+keywords:
+  - volumetric muscle loss
+  - computational pathology
+  - multimodal learning
+  - skeletal muscle histology

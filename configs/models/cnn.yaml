@@ -1,0 +1,5 @@
+# ImageNet-pretrained ResNet-50 fine-tuned on histology patches (image only).
+model: cnn
+family: ResNet50
+uses_morphometrics: false
+morphometric_only: false

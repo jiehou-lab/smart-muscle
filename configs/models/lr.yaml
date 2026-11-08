@@ -1,0 +1,5 @@
+# Logistic regression on flattened, ImageNet-normalised 3x224x224 patch pixels.
+model: lr
+family: LR
+uses_morphometrics: false
+morphometric_only: false

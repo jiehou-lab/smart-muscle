@@ -1,0 +1,88 @@
+data:
+  train:
+    img_path: data/Dataset_balanced/multiclass/train
+  test:
+    img_path: data/Dataset_balanced/multiclass/test
+  morphometrics_path: data/Dataset_balanced/multiclass/Perfect_poor_very_poor.xlsx
+  num_classes: 3
+  class_names:
+  - Perfect
+  - Poor
+  - Very poor
+  batch_size: 64
+  num_workers: 0
+  loader_threads: 6
+  online_flips: true
+  validation:
+    fraction: 0.2
+    group_by: animal
+  exclude_augmented: true
+  folder_to_class:
+  - 0
+  - 1
+  - 2
+  positive_class: null
+  most_injured_class: Very poor
+  morphometric_monotone_sign: 0
+environment:
+  seed: 95
+  gpu_id: 0
+  deterministic: true
+optimization:
+  learning_rate: 0.001
+  min_learning_rate: 5.0e-06
+  weight_decay: 1.0e-05
+  gamma: 0.8
+  epochs: 200
+  patience: 20
+  scheduler: cosine
+models:
+  timm:
+    model_name: resnet50
+    pretrained: true
+  numerical:
+    embed_dim: 32
+    fusion_hidden_dim: 256
+    dropout_prob: 0.1
+lr:
+  max_iter: 5000
+  solver: lbfgs
+  C: 1.0
+  class_weight: balanced
+rf:
+  n_estimators: 300
+  max_depth: null
+  max_features: sqrt
+  min_samples_leaf: 2
+  min_samples_split: 2
+  bootstrap: true
+  class_weight: balanced_subsample
+  n_jobs: 2
+  monotone_morphometrics: false
+streaming:
+  max_in_memory_gb: 4.0
+  chunk_patches: 2000
+  lr_epochs: 5
+output:
+  root: data/VMLevaluator_updated/neural_networks
+  name: mlp_morph__multiclass
+  overwrite: true
+  dir: data/VMLevaluator_updated/neural_networks/mlp_morph__multiclass
+quick_run:
+  enabled: false
+  epochs: 2
+  patience: 1
+  max_patches_per_class: 50
+  max_iter: 200
+  n_estimators: 30
+task: multiclass
+model: mlp_morph
+family: ResNet50
+uses_morphometrics: true
+morphometric_only: true
+meta:
+  task: multiclass
+  model: mlp_morph
+  data_root: data/Dataset_balanced
+  results_root: data/VMLevaluator_updated/neural_networks
+  quick_run: false

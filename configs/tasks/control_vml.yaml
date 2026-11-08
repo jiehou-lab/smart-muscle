@@ -1,0 +1,18 @@
+# Task: Control versus VML (binary).
+# Published split: 20 train / 8 test WSIs -> 3,984 train / 2,692 test patches.
+task: control_vml
+data:
+  train: {img_path: images_myofiber/control_vml/train}
+  test:  {img_path: images_myofiber/control_vml/test}
+  morphometrics_path: images_myofiber/control_vml/Control_VML_dataset.xlsx
+  num_classes: 2
+  # Severity-ordered: class index increases with injury, positive = most
+  # injured. See vmlevaluator/labels.py. This task's folders were already in
+  # that order, so the map is the identity.
+  folder_to_class: [0, 1]
+  class_names: [Control, VML]
+  positive_class: VML
+  # P(VML) must not increase with fibre calibre or fibre count.
+  morphometric_monotone_sign: -1
+optimization:
+  patience: 8

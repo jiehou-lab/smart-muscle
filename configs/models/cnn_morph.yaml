@@ -1,0 +1,6 @@
+# ResNet-50 image embedding (2048-d) concatenated with a 32-d morphometric
+# encoder embedding, followed by the fusion classification head.
+model: cnn_morph
+family: ResNet50
+uses_morphometrics: true
+morphometric_only: false

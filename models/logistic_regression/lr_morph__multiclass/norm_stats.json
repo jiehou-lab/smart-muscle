@@ -1,0 +1,15 @@
+{
+  "mean": [
+    1749.2779541015625,
+    5956.0
+  ],
+  "std": [
+    490.0167541503906,
+    2471.90966796875
+  ],
+  "features": [
+    "avg_csa",
+    "num_fibers"
+  ],
+  "source": "data/Dataset_balanced//multiclass//Perfect_poor_very_poor.xlsx"
+}

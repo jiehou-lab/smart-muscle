@@ -1,0 +1,14 @@
+# The model weights are not committed (see .gitignore), so no Git LFS is needed.
+# If you ever decide to commit them instead, add the two filter lines below and
+# run `git lfs install` first — each ResNet-50 checkpoint is ~92 MiB, past
+# GitHub's 50 MB warning and close to its 100 MiB hard limit.
+#   *.pth    filter=lfs diff=lfs merge=lfs -text
+#   *.joblib filter=lfs diff=lfs merge=lfs -text
+
+* text=auto
+*.csv text
+*.json text
+*.md text
+*.py text
+*.yaml text
+*.ipynb text

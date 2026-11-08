@@ -1,0 +1,40 @@
+# Conda environment for the full pipeline, including the optional extras.
+#
+#   conda env create -f environment.yml
+#   conda activate vmlevaluator
+#   pip install -e .
+#
+# For GPU training, replace `cpuonly` with the pytorch-cuda build that matches
+# your driver (see https://pytorch.org/get-started/locally/).
+name: vmlevaluator
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - numpy>=1.23
+  - pandas>=1.5
+  - scikit-learn>=1.2
+  - scikit-image>=0.20
+  - scipy>=1.9
+  - matplotlib>=3.6
+  - pillow>=9.0
+  - openpyxl>=3.1
+  - tqdm>=4.64
+  - tabulate>=0.9
+  - joblib>=1.2
+  - xgboost>=2.0            # the manuscript's classical model
+  - pytorch>=2.0
+  - torchvision>=0.15
+  - cpuonly                 # swap for pytorch-cuda=12.1 (or similar) on a GPU box
+  - libvips                 # needed by pyvips for pyramidal whole-slide formats
+  - jupyterlab>=4.0
+  - ipywidgets>=8.0
+  - pytest>=7.0
+  - pip:
+      - omegaconf>=2.3
+      - timm>=0.9
+      - pyvips>=2.2
+      - opencv-python-headless>=4.7
+      - nbclient>=0.8

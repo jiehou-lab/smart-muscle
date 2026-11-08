@@ -1,0 +1,46 @@
+# Keeps out everything that is not code, notebooks, figures, the saved
+# per-patch predictions or the synthetic data generator.
+#
+# The leading slashes matter. A bare `data/` matches a directory called `data`
+# at ANY depth, which silently excluded `vmlevaluator/data/` -- the package's
+# own data-loading module -- from the first commit, leaving a repository that
+# could not be imported. Anchor anything that is meant to mean "the one at the
+# top level".
+#
+# Two exclusions are deliberate and easy to "fix" by mistake:
+#   * weights are NOT in the repository. They are ~600 MB, and REPRODUCE.md
+#     tells a reviewer the pipeline can be checked without them, and run end to
+#     end on synthetic data. If you ever publish them, link the archive from
+#     README.md rather than committing them here.
+#   * /data/ holds histology that is not distributable, and the human
+#     predictions carry study codes -- see RELEASING.md before pushing.
+
+# Histology and workbooks (the top-level folder only)
+/data/
+
+# Trained weights and the bundled ImageNet checkpoint
+*.pth
+*.joblib
+/pretrained/
+
+# Generated stand-in data and everything a re-run writes
+/data_synthetic/
+/runs/
+
+# Notebook state -- notebooks/ is committed clean, notebooks/executed with outputs
+.ipynb_checkpoints/
+
+# Python (these are meant to match at any depth)
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+/build/
+/dist/
+/.venv/
+/venv/
+
+# OS
+.DS_Store
+Thumbs.db

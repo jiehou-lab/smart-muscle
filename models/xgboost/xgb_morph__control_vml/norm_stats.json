@@ -1,0 +1,15 @@
+{
+  "mean": [
+    2004.7369384765625,
+    8075.7998046875
+  ],
+  "std": [
+    600.028076171875,
+    3145.032958984375
+  ],
+  "features": [
+    "avg_csa",
+    "num_fibers"
+  ],
+  "source": "data/Dataset_balanced//control_vml//Control_VML_dataset.xlsx"
+}

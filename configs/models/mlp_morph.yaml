@@ -1,0 +1,10 @@
+# Table-2 ablation: morphometric-only MLP. Same numerical encoder and
+# classification head as the fusion branch, with no CNN backbone.
+model: mlp_morph
+family: ResNet50
+uses_morphometrics: true
+morphometric_only: true
+optimization:
+  epochs: 200
+  patience: 20
+  learning_rate: 1.0e-3

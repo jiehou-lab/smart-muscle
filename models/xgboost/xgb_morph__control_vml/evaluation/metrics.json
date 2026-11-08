@@ -1,0 +1,63 @@
+{
+  "task": "control_vml",
+  "model": "rf_morph",
+  "task_type": "binary",
+  "class_names": [
+    "Control",
+    "VML"
+  ],
+  "threshold": 0.5,
+  "quick_run": false,
+  "patch": {
+    "level": "patch",
+    "task_type": "binary",
+    "n": 1466,
+    "accuracy": 1.0,
+    "macro_precision": 1.0,
+    "macro_recall": 1.0,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "auc": 1.0,
+    "macro_auc": null,
+    "pos_precision": 1.0,
+    "pos_recall": 1.0,
+    "pos_f1": 1.0,
+    "pos_class": "VML",
+    "per_class_f1": [
+      1.0,
+      1.0
+    ],
+    "most_injured_class": "VML",
+    "most_injured_f1": 1.0,
+    "most_injured_precision": 1.0,
+    "most_injured_recall": 1.0,
+    "most_injured_auc": 1.0,
+    "headline_f1": 1.0
+  },
+  "wsi": {
+    "level": "wsi",
+    "task_type": "binary",
+    "n": 8,
+    "accuracy": 1.0,
+    "macro_precision": 1.0,
+    "macro_recall": 1.0,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "auc": 1.0,
+    "macro_auc": null,
+    "pos_precision": 1.0,
+    "pos_recall": 1.0,
+    "pos_f1": 1.0,
+    "pos_class": "VML",
+    "per_class_f1": [
+      1.0,
+      1.0
+    ],
+    "most_injured_class": "VML",
+    "most_injured_f1": 1.0,
+    "most_injured_precision": 1.0,
+    "most_injured_recall": 1.0,
+    "most_injured_auc": 1.0,
+    "headline_f1": 1.0
+  }
+}
