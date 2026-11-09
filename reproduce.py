@@ -19,7 +19,7 @@ models/), the same commands without --synthetic re-run the manuscript itself:
     python reproduce.py all                  # train, then compare
 
 Nothing is ever written into data/, models/ or reference/; every output goes to runs/
-(runs/synthetic/ with --synthetic). See README.md and REPRODUCE.md.
+(runs/synthetic/ with --synthetic). See README.md and the notebooks/ folder.
 """
 
 from __future__ import annotations

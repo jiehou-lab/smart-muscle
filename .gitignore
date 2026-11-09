@@ -7,20 +7,18 @@
 # could not be imported. Anchor anything that is meant to mean "the one at the
 # top level".
 #
-# Two exclusions are deliberate and easy to "fix" by mistake:
-#   * weights are NOT in the repository. They are ~600 MB, and REPRODUCE.md
-#     tells a reviewer the pipeline can be checked without them, and run end to
-#     end on synthetic data. If you ever publish them, link the archive from
-#     README.md rather than committing them here.
-#   * /data/ holds histology that is not distributable, and the human
-#     predictions carry study codes -- see RELEASING.md before pushing.
+# The trained weights ARE committed (630 MB across 21 files). The largest is
+# 92.0 MiB, under GitHub's 100 MiB hard limit, so no Git LFS is needed -- the
+# six ResNet-50 checkpoints do trip the 50 MB warning, which is only a warning.
+#
+# /data/ holds histology that is not distributable, and the human predictions
+# carry study codes -- see RELEASING.md before pushing.
 
 # Histology and workbooks (the top-level folder only)
 /data/
 
-# Trained weights and the bundled ImageNet checkpoint
-*.pth
-*.joblib
+# The ImageNet checkpoint ResNet-50 starts from: ~100 MB, and timm downloads it
+# automatically, so there is nothing to gain by committing it.
 /pretrained/
 
 # Generated stand-in data and everything a re-run writes
